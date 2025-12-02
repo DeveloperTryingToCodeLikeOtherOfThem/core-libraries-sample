@@ -1,7 +1,7 @@
 namespace std {
     export import __math = Math 
 
-    export enum __corePropertyMethods {
+    export const enum __corePropertyMethods {
      // expose them here
     }  
 
