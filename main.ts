@@ -22,8 +22,8 @@ namespace std {
     }
 
    //% block="get all properties %core %x %y"
-    export function __getProperties(core: __corePropertyMethods, x: number, y: number) {
-        setPropertyCore(core, x, y);
+    export function __getProperties(core: __corePropertyMethods, x: number, y: number): number {
+        return setPropertyCore(core, x, y);
     }
 
     // changing enum checks if add is to for example round with from 2 parameters to 1 parameter is not supported for now
