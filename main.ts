@@ -3,6 +3,8 @@
  */
 namespace std {
     export import __math = Math // just gets the standard library imported 
+ 
+    let _args = 1;
 
     export const enum __corePropertyMethods {
      // expose them here example preview  
@@ -13,6 +15,7 @@ namespace std {
         return core;
     }
 
+    // changing enum checks if add is to for example round with from 2 parameters to 1 parameter is not supported for now
     export function __setPropertyCore(core: __corePropertyMethods, a: number, b: number) {
         if (core === __corePropertyMethods.Add) return a + b;
         return __propertyCore(core); // returns back as a property core enum for the drop down menu to get the library of the properties in a row
