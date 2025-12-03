@@ -1,12 +1,21 @@
+/**
+ * An namespace for an example everything private for stuff behind the scenes privately for only people wanting to add more stuff for the runtime engine
+ */
 namespace std {
-    export import __math = Math 
+    export import __math = Math // just gets the standard library imported 
 
     export const enum __corePropertyMethods {
-     // expose them here
+     // expose them here example preview  
+     Add // use a comma and then after add more property constants for library
     }  
 
     export function __propertyCore(core: __corePropertyMethods) {
         return core;
+    }
+
+    export function __setPropertyCore(core: __corePropertyMethods, a: number, b: number) {
+        if (core === __corePropertyMethods.Add) return a + b;
+        return __propertyCore(core); // returns back as a property core enum for the drop down menu to get the library of the properties in a row
     }
 
     // create more here
