@@ -1,5 +1,5 @@
 {
-    "name": "core libraries sample - Copy",
+    "name": "core libraries sample - Copy - Copy",
     "description": "",
     "dependencies": {
         "device": "*"
@@ -7,7 +7,8 @@
     "files": [
         "main.ts",
         "README.md",
-        "assets.json"
+        "assets.json",
+        "pxt_modules/docs/editorUI.md"
     ],
     "testFiles": [
         "test.ts"
