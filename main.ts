@@ -11,7 +11,9 @@ namespace std {
     export const enum __corePropertyMethods {
      // expose them here example preview  
      //% block="Add"
-     Add // use a comma and then after add more property constants for library
+     Add, // use a comma and then after add more property constants for library
+     //% block="Subtract"
+     Subtract
     }  
 
    //% blockId="propert_core" block="property core %core"
@@ -23,6 +25,8 @@ namespace std {
     // not exposed because it is not meant for public
      function setPropertyCore(core: __corePropertyMethods, a: number, b: number) {
         if (core === __corePropertyMethods.Add) return a + b;
+        else if (core === __corePropertyMethods.Subtract) return a - b;
+        // add more properties here for working too if you want
         return __propertyCore(core); // returns back as a property core enum for the drop down menu to get the library of the properties in a row
     }
 
