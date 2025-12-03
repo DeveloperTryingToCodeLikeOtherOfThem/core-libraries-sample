@@ -36,14 +36,15 @@ namespace std {
         return __propertyCore(core); // returns back as a property core enum for the drop down menu to get the library of the properties in a row
     }
 
-    const enum __PropertyType {
+    export const enum __PropertyType {
         //% block="null"
         Null,
         //% block="undefined"
         Undefined
     }
 
-    function setProperty(core: __PropertyType) {
+    //% blockId="core_pxsim_undefined_or_null" block="get undefined or null %core"
+    export function getUndefinedOrNull(core: __PropertyType) {
         if (core === __PropertyType.Null) return __getNull();
         else if (core === __PropertyType.Undefined) return __getUndefined();
         return core; // returns back as a property core enum property
