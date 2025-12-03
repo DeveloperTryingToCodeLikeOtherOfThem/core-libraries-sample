@@ -55,7 +55,7 @@ namespace std {
     }
 
     export function __getNull(): null {
-        return undefined;
+        return null;
     }
 
     // create more here
