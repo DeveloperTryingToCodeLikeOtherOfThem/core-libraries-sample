@@ -44,17 +44,17 @@ namespace std {
     }
 
     //% blockId="core_pxsim_undefined_or_null" block="get undefined or null %core"
-    export function getUndefinedOrNull(core: __PropertyType) {
+    export function getUndefinedOrNull(core: __PropertyType): null | undefined {
         if (core === __PropertyType.Null) return __getNull();
         else if (core === __PropertyType.Undefined) return __getUndefined();
         return core; // returns back as a property core enum property
     }
 
-    export function __getUndefined(): number {
+    export function __getUndefined(): undefined {
         return undefined;
     }
 
-    export function __getNull(): number {
+    export function __getNull(): null {
         return undefined;
     }
 
