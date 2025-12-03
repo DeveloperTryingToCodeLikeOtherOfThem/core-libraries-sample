@@ -44,7 +44,7 @@ namespace std {
     }
 
     //% blockId="core_pxsim_undefined_or_null" block="get undefined or null %core"
-    export function getUndefinedOrNull(core: __PropertyType): null | undefined {
+    export function getUndefinedOrNull(core: __PropertyType): any {
         if (core === __PropertyType.Null) return __getNull();
         else if (core === __PropertyType.Undefined) return __getUndefined();
         return core; // returns back as a property core enum property
